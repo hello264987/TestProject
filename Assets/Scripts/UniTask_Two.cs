@@ -6,10 +6,7 @@ public class UniTask_Two : MonoBehaviour
     public GameObject ball;
     void Start()
     {
-        //TODO
-        //UniTask.WaitUntil()
         WaitUntilTest();
-        
     }
 
     void Update()
@@ -21,9 +18,13 @@ public class UniTask_Two : MonoBehaviour
     {
         Debug.Log("Start " + Time.time);
         await UniTask.WaitUntil(() => isFrameThanOne());
+
+        await UniTask.WaitUntilValueChanged(ball.transform, x => x.transform.position);
+
         Debug.Log("End " + Time.time);
         ball.GetComponent<Renderer>().material.color = Color.red;
     }
+
 
     public bool isFrameThanOne()
     {
