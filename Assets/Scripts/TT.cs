@@ -7,6 +7,7 @@ public class TT : MonoBehaviour
 
     void Start()
     {
+        Debug.Log("AA");
     }
 
     void Update()
