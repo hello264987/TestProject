@@ -1,6 +1,4 @@
-using System.Text;
 using UnityEngine;
-using UnityEngine.InputSystem;
 
 public class TT : MonoBehaviour
 {
@@ -8,11 +6,15 @@ public class TT : MonoBehaviour
     void Start()
     {
         Debug.Log("AA");
+        
     }
 
     void Update()
     {
-        if (Keyboard.current.qKey.wasPressedThisFrame)
+
+
+        
+/*         if (Keyboard.current.qKey.wasPressedThisFrame)
         {
             Debug.Log("Q key was pressed");
         }
@@ -25,6 +27,6 @@ public class TT : MonoBehaviour
 
 
             Debug.Log("w key was pressed");
-        }
+        } */
     }
 }
