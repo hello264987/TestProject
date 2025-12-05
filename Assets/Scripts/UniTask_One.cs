@@ -1,5 +1,6 @@
 using UnityEngine;
 using Cysharp.Threading.Tasks;
+using System.Threading.Tasks;
 
 public class UniTask_One : MonoBehaviour
 {
@@ -15,11 +16,19 @@ public class UniTask_One : MonoBehaviour
 
     async void Start()
     {
-        Debug.Log("Start "+Time.frameCount);
+        Debug.Log("Start " + Time.frameCount);
 
         //await UniTask.DelayFrame(100);
         await UniTask.NextFrame();
 
-        Debug.Log("End "+Time.frameCount);
+        Debug.Log("End " + Time.frameCount);
+    }
+
+    async Task<int> DealyTest()
+    {
+        Debug.Log("Task Start" + Time.time);
+        await Task.Delay(1000);
+        Debug.Log("Task End" + Time.time);
+        return 1;
     }
 }
