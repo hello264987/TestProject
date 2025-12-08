@@ -40,7 +40,6 @@ public class TT : MonoBehaviour
         var numberList1 = FirstMulandDiv(numberList);
         double result = lastAddandSub(numberList1);
         Debug.LogError(result);
-
     }
 
 

@@ -57,5 +57,7 @@ public class UniTask_Eight : MonoBehaviour
     {
         cts.Cancel();
         cts.Dispose();
+
+        cts = new CancellationTokenSource();
     }
 }
