@@ -528,6 +528,7 @@ GameObject:
   - component: {fileID: 1072285162}
   - component: {fileID: 1072285161}
   - component: {fileID: 1072285163}
+  - component: {fileID: 1072285164}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -616,7 +617,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1072285157}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 017a0150e153d5546bb3dfc265f32bd7, type: 3}
   m_Name: 
@@ -675,11 +676,28 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1072285157}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 20a883ec32df3454d8713b6334907529, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UniTask_Nine
+--- !u!114 &1072285164
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1072285157}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e94d413860e2d34a8542731984b73a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RandomTest
+  savedState:
+    s0: 0
+    s1: 0
+    s2: 0
+    s3: 0
 --- !u!1 &1093518293
 GameObject:
   m_ObjectHideFlags: 0

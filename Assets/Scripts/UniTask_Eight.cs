@@ -4,6 +4,8 @@ using Cysharp.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.UI;
 
+
+
 public class UniTask_Eight : MonoBehaviour
 {
     public GameObject OB;
@@ -13,7 +15,6 @@ public class UniTask_Eight : MonoBehaviour
     public CancellationTokenSource cts;
     public CancellationToken token;
 
-    //拋出來的操作取消異常，一定要處理，不然就會發生一些奇怪得bug
     void Start()
     {
         cts = new CancellationTokenSource();
