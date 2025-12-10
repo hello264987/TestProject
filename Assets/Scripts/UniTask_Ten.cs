@@ -13,7 +13,7 @@ public class UniTask_Ten : MonoBehaviour
     public Button btn2;
     public TextMeshProUGUI text1;
     public TextMeshProUGUI text2;
-    public string url1 = "https://www.baidu.com/";
+    public string url1 = "https://www.idu.com/";
     public string url2 = "https://www.google.com/";
 
     //Forget方法 UniTask提供 同步方法中調用異步方法 不想await 又不想有警告 可用Forget
