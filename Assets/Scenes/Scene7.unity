@@ -424,6 +424,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UniTask_Twelve
   btn1: {fileID: 2043155374}
+  btn2: {fileID: 1201697562}
 --- !u!1 &842671914
 GameObject:
   m_ObjectHideFlags: 0
