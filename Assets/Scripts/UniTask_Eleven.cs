@@ -48,10 +48,18 @@ public class UniTask_Eleven : MonoBehaviour
     {
         var webRequest = UnityWebRequestTexture.GetTexture(url);
         var (failed, result) = await webRequest.SendWebRequest().WithCancellation(cts.Token).SuppressCancellationThrow();
-        var texture = ((DownloadHandlerTexture)result.downloadHandler).texture;
+        if (!failed)
+        {
+            Debug.LogError("失敗了");
+            return;
+        }
+        else
+        {
+            var texture = ((DownloadHandlerTexture)result.downloadHandler).texture;
 
-        Sprite sprite=Sprite.Create(texture, new Rect(Vector2.zero, new Vector2(texture.width, texture.height)), new Vector2(0.5f, 0.25f));
-        img2.sprite = sprite;
-        img2.preserveAspect = true;
+            Sprite sprite=Sprite.Create(texture, new Rect(Vector2.zero, new Vector2(texture.width, texture.height)), new Vector2(0.5f, 0.25f));
+            img2.sprite = sprite;
+            img2.preserveAspect = true;
+        }
     }
 }

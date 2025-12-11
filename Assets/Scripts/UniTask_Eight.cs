@@ -4,8 +4,6 @@ using Cysharp.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.UI;
 
-
-
 public class UniTask_Eight : MonoBehaviour
 {
     public GameObject OB;
