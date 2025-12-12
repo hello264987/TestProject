@@ -13,8 +13,8 @@ public class TestToken : MonoBehaviour
 
     void Start()
     {
-        Run().Forget();
-        Run2().Forget();
+        Run();
+        Run2();
     }
 
     void Update()
@@ -26,8 +26,7 @@ public class TestToken : MonoBehaviour
     }
 
 
-
-    async UniTaskVoid Run()
+    void Run()
     {
         btn1.onClick.AddListener(async () =>
         {
@@ -36,8 +35,9 @@ public class TestToken : MonoBehaviour
             Debug.LogError("❗ NoToken：等待結束，即使場景已被切換！");
         });
     }
-    
-    async UniTaskVoid Run2()
+
+   //Unity 的 Button.onClick 只能接受「void 回傳」的委派
+    void Run2()
     {
         var token = this.GetCancellationTokenOnDestroy();
 
@@ -55,7 +55,5 @@ public class TestToken : MonoBehaviour
                 Debug.LogWarning("⚡ WithToken：等待被取消（因為物件被 Destroy 或場景切換）");
             }
         });
-        
     }
-
 }

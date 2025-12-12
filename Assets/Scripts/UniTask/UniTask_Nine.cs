@@ -10,7 +10,7 @@ public class UniTask_Nine : MonoBehaviour
     {
         cts = new CancellationTokenSource();
 
-        CountStart();
+        CountStart().Forget();
         cts.CancelAfter(TimeSpan.FromSeconds(3));
     }
 

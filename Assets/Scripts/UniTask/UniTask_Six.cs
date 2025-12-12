@@ -12,7 +12,7 @@ using UnityEngine;
 
 public class UniTask_Six : MonoBehaviour
 {
-    async void Start()
+    void Start()
     {
         //StartCoroutine(CoroutineTest());
 
