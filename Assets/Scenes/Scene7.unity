@@ -270,6 +270,7 @@ GameObject:
   - component: {fileID: 710705401}
   - component: {fileID: 710705403}
   - component: {fileID: 710705404}
+  - component: {fileID: 710705405}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -433,11 +434,26 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 710705397}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 38dda2d6dd71a74438aff66aa19f0a40, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UniTask_Thirteen
+  button: {fileID: 2043155374}
+  lastClick: 0
+--- !u!114 &710705405
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 710705397}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a4cd033643592e40b800e5f43954936, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UniTask_Fourteen
+  button: {fileID: 2043155374}
 --- !u!1 &842671914
 GameObject:
   m_ObjectHideFlags: 0
