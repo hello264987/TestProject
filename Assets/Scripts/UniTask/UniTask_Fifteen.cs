@@ -1,6 +1,5 @@
 using Cysharp.Threading.Tasks;
 using Cysharp.Threading.Tasks.Triggers;
-using NUnit.Framework.Internal;
 using UnityEngine;
 
 public class UniTask_Fifteen : MonoBehaviour
@@ -24,6 +23,7 @@ public class UniTask_Fifteen : MonoBehaviour
         Debug.Log("撞到了");
     }
     
+    //這個會受到InputSytem的影響，新舊有差
     public async UniTaskVoid TestClick()
     {
         var click = ball.GetAsyncMouseDownTrigger();
