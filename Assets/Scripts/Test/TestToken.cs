@@ -5,6 +5,8 @@ using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
+
+//寫基礎的東西，有時間也上傳Git
 public class TestToken : MonoBehaviour
 {
     public Button btn1;
@@ -36,7 +38,7 @@ public class TestToken : MonoBehaviour
         });
     }
 
-   //Unity 的 Button.onClick 只能接受「void 回傳」的委派
+    //Unity 的 Button.onClick 只能接受「void 回傳」的委派
     void Run2()
     {
         var token = this.GetCancellationTokenOnDestroy();
